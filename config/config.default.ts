@@ -14,10 +14,17 @@ export default (appInfo: EggAppInfo) => {
   const bizConfig = {
     sourceUrl: `https://github.com/eggjs/examples/tree/master/${appInfo.name}`,
   };
-
+  
   // the return config will combines to EggAppConfig
   return {
     ...config,
     ...bizConfig,
   };
 };
+
+exports.view = {
+  defaultViewEngine: 'nunjucks',
+  mapping: {
+    '.nj': 'nunjucks',
+  },
+}

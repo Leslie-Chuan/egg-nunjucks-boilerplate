@@ -5,4 +5,10 @@ export default class ListController extends Controller {
     const { ctx } = this;
     ctx.body = await ctx.service.list.getList('fuk');
   }
+  async getList() {
+    const { ctx } = this;
+    // const res = await ctx.service.list.getList();
+    console.log('res:', res);
+    // await ctx.render('list/index.tpl', {name: 'view test'});
+  }
 }

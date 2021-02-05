@@ -10,21 +10,22 @@ export default (appInfo: EggAppInfo) => {
   // add your egg config in here
   config.middleware = [];
 
+  config.view = {
+    defaultViewEngine: 'nunjucks',
+    mapping: {
+      '.tpl': 'nunjucks',
+    },
+  };
+
+  config.baseUrl = 'ht' + 'tps' + ':/' + '/sa' + 'pi' + '.al' + 'iga' + 'mes.com/ds/ajax/e' + 'ndpoint.json';
   // add your special config in here
   const bizConfig = {
     sourceUrl: `https://github.com/eggjs/examples/tree/master/${appInfo.name}`,
   };
-  
+
   // the return config will combines to EggAppConfig
   return {
     ...config,
     ...bizConfig,
   };
 };
-
-exports.view = {
-  defaultViewEngine: 'nunjucks',
-  mapping: {
-    '.nj': 'nunjucks',
-  },
-}

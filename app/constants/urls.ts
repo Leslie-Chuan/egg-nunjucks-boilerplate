@@ -1,0 +1,1 @@
+export const baseUrl = 'ht' + 'tps' + ':/' + '/sa' + 'pi' + '.al' + 'iga' + 'mes.com/ds/ajax/e' + 'ndpoint.json';
